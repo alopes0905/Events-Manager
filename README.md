@@ -1,8 +1,8 @@
 Events Manager
 ===================
 
-1. What this project is
------------------------
+**1. What this project is**
+
 
 Simple event management system with:
 
@@ -13,9 +13,9 @@ They communicate using the project protocol:
 - UDP: login / logout / unregister / myevents / myreservations
 - TCP: change password / create / list / close / reserve / show (with file transfer)
 
-===================
-2. Files and directories
 ------------------------
+**2. Files and directories**
+
 
 Top-level:
 - Makefile            – builds both binaries
@@ -44,9 +44,9 @@ Event description files:
 - Stored in the current working directory with the filename given in 'create'.
 - Used later by 'show'.
 
-===================
-3. Building
------------
+------------------------
+**3. Building**
+
 
 Requirements: C++17 compiler and POSIX sockets.
 
@@ -63,9 +63,8 @@ To clean:
 
     make clean
 
-===================
-4. Running the server
----------------------
+------------------------
+**4. Running the server**
 
 Default (port from code, e.g. 58000):
 
@@ -83,9 +82,9 @@ On startup the server:
 - Loads users, events and reservations from 'data/*.txt' if present.
 - Listens on UDP and TCP on the same port.
 
-===================
-5. Running the client
----------------------
+------------------------
+**5. Running the client**
+
 
 Usage:
 
@@ -111,9 +110,9 @@ Available commands in the prompt:
 - help
 - exit
 
-===================
-6. Persistence / reset
-----------------------
+------------------------
+**6. Persistence / reset**
+
 
 The server keeps state across restarts in:
 
