@@ -13,7 +13,7 @@ They communicate using the project protocol:
 - UDP: login / logout / unregister / myevents / myreservations
 - TCP: change password / create / list / close / reserve / show (with file transfer)
 
-
+===================
 2. Files and directories
 ------------------------
 
@@ -44,7 +44,7 @@ Event description files:
 - Stored in the current working directory with the filename given in 'create'.
 - Used later by 'show'.
 
-
+===================
 3. Building
 -----------
 
@@ -63,7 +63,7 @@ To clean:
 
     make clean
 
-
+===================
 4. Running the server
 ---------------------
 
@@ -83,7 +83,7 @@ On startup the server:
 - Loads users, events and reservations from 'data/*.txt' if present.
 - Listens on UDP and TCP on the same port.
 
-
+===================
 5. Running the client
 ---------------------
 
@@ -111,7 +111,7 @@ Available commands in the prompt:
 - help
 - exit
 
-
+===================
 6. Persistence / reset
 ----------------------
 
